@@ -1,0 +1,167 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f5f8;
+  color: #373737;
+}
+
+.kanban-board {
+  padding: 20px;
+}
+
+.controls {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.display-button {
+  padding: 8px 12px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #373737;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.chevron-icon {
+  margin-left: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.options-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 16px;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  min-width: 200px;
+}
+
+.option-group {
+  margin-bottom: 16px;
+}
+
+.option-group h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #6b6f76;
+}
+
+.select-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #373737;
+}
+
+.board-columns {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.board-column {
+  flex: 0 0 300px;
+  background-color: #f4f5f8;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.column-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.column-title-icon {
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.ticket-id {
+  color: #6b6f76;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.user-icon, .priority-icon {
+  width: 16px;
+  height: 16px;
+  color: #6b6f76;
+}
+
+.card-title {
+  font-size: 15px;
+  margin: 0 0 8px;
+  font-weight: 500;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.priority-label {
+  font-size: 13px;
+  color: #6b6f76;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.priority-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading-icon {
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
